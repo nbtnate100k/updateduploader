@@ -1,0 +1,21 @@
+@echo off
+REM run.bat - Windows launcher for Drop Bot
+
+echo 🤖 Starting Drop Bot...
+echo 📝 Loading configuration...
+
+REM Check if .env file exists
+if not exist .env (
+    echo ❌ ERROR: .env file not found!
+    echo.
+    echo Create a .env file with:
+    echo BOT_TOKEN="YOUR_BOT_TOKEN"
+    echo CHANNEL_USERNAME="@your_channel"
+    pause
+    exit /b 1
+)
+
+REM Run the bot
+python pluxobot.py
+
+pause

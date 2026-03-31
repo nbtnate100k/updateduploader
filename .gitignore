@@ -1,0 +1,42 @@
+# Bot data (local only)
+bot_data/
+*.json
+!railway.json
+!shop_products.json
+
+# Environment
+.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+.windsurf/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Local files
+run_admin_bot.bat
+bot_requirements.txt
+start_local.bat
+run.bat.txt
+*.bat
+*.bat.txt
